@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+
+<body>
+    <div>
+        <h1>Namespacing Fundamentals</h1>
+        <div>
+            <h2>Single Global Variable Pattern</h2>
+            Opting for primary object of reference.
+            <div class="challenge">
+                Make sure that no one else has used the same global variable. 
+            </div>
+            <div class="solution">
+                Prefix Namespacing - unique prefix namespace (ex. "myApplication_") and
+                then define any methods, variables or other objects after the prefix. 
+                (This again is relying on unique name for the namespace prefix and the
+                name of the variables, methods.)
+            </div>
+            <div class="reference">singleGlobalVariables.js</div>
+        </div>
+        <div>
+            <h2>Object Literal Notation</h2>
+            Object containing a collection of key:values pairs, similar to a normal array. 
+            <div class="advantage">
+                Easily readable structures. Used for decoupling a default configuration for an 
+                application. This way the default configuration is located in a single area
+                that can be easily modified without the need to search throught the entire
+                codebase.
+            </div>
+            <div class="challenge">
+              Have the potential to grow in long syntactic constructs. 
+            </div>
+            <div class="solution">
+                
+            </div>
+            <div class="reference">objectLiteralNotation.js</div>
+        </div>
+        <div>
+            <h2>Nested Namespacing</h2>
+            Extension of the object literal patern. Low risk of name collision. Relies on the 
+            low chance that nested children already exist even if the namespace already exists.
+            <div class="advantage">
+            </div>
+            <div class="challenge">
+            </div>
+            <div class="solution">
+            </div>
+            <div class="reference">nestedNamespacing.js</div>
+        </div>
+        <div>
+            <h2>Immediately-infoked Function Expressions (IIFE)</h2>
+            An unnamed function which is immediately invoked after it's beeing defined.
+            <div class="advantage">
+            </div>
+            <div class="challenge">
+            </div>
+            <div class="solution">
+            </div>
+            <div class="reference">iife.js</div>
+        </div>
+        <div>
+            <h2>Namespace injection</h2>
+            Variation of IIFE where the methods and properties are injected for a specific
+            namespace from wihin a function wrapper using this as a namespace proxy.
+            <div class="advantage">
+                Easy application of functional behavior to multiple objects or namespaces and 
+                can come in useful when applying a set of base methods to be built on later 
+                (eg. getters and setters).
+            </div>
+            <div class="challenge">
+                There might be more optimal approached to achive the functional behavior ex. 
+                deep object extension / merging.
+            </div>
+            <div class="solution">
+            </div>
+            <div class="reference">namespaceInjection.js</div>
+        </div>
+    </div>
+    <div>
+        <h1></h1>
+        <div>
+            <h2></h2>
+            <div class="challenge">
+
+            </div>
+            <div class="solution">
+
+            </div>
+            <div class="reference"></div>
+        </div>
+    </div>
+    <div>Resourses: http://addyosmani.com/blog/essential-js-namespacing/</div>
+</body>
+</html>
