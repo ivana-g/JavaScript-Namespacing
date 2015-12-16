@@ -32,7 +32,7 @@ var myApplication = myApplication = myApplication || {};
 myApplication || (myApplication = {});
 var myApplication = myApplication === undefined ? {} : myApplication;
 
-/** Default Configuration set-up of an appilcation **/\
+/** Default Configuration set-up of an appilcation **/
 var myConfig = {
     language: 'english', 
     defaults: {

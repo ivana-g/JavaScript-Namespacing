@@ -30,7 +30,7 @@ myApp.utils = {};
 
 
 /** 
-    This same approach to extension could be applied toa regular IIFE by just passing in the 
+    This same approach to extension could be applied to a regular IIFE by just passing in the 
     context as an argument and modifying the context rather than just 'this'.
 **/
 console.log(myApp);

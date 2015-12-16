@@ -25,7 +25,7 @@ console.log(namespace);
 /** 
     namespace and undefined are passed in the iife to endure: 
     1. namespace can be modified locally and isn't overwritten outside of our function context
-    2. the value of undefined is guaranteed as being trylly undefined. Avoids issues with undefind
+    2. the value of undefined is guaranteed as being truely undefined. Avoids issues with undefind
        being mutable pre_ES5.
 */
 
@@ -46,7 +46,7 @@ console.log(namespace);
         console.log("You said: " + msg);
     }
    
-})(window.namespace = windown.namespace || {});
+})(window.namespace = window.namespace || {});
 
 console.log(namespace.foobar);
 console.log(namespace.sayHello());

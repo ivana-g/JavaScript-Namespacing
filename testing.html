@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<button id="btnClick">Click Me!</button>
+		<script src="testing.js"></script>
+		<script type="text/javascript">
+			var MyNamespace = MyNamespace || {};
+			(function ($m) {
+				var btnClick = document.getElementById("btnClick");
+				if (btnClick) {
+					btnClick.addEventListener("click", function () {
+						$m.buttonClick();
+						var p1 = new $m.Person();
+						var p2 = new $m.Person();
+						p1.ageString = "hundred";
+						console.log(p1.ageFunction());
+						console.log(p2.ageFunction());
+						
+						//var m1 = new $m.MarriedPerson();
+					});
+				}
+			})(MyNamespace);
+			//Inheritance: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+		</script>
+	</body>
+</html>
